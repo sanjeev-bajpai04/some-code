@@ -1,0 +1,93 @@
+
+	
+<!DOCTYPE html>
+<html>
+<head>
+  <title> CSS Animation </title>
+  <style type="text/css">
+
+
+    @keyframes an_1 {
+      1% {
+        background-color: gold;
+        top: 0px;
+        left: 0px;
+      }
+      25% {
+        background-color: green;
+        top: 200px;
+        left: 0px;
+      }
+      50%{
+      	background-color: yellow;
+        top: 200px;
+        left: 500px;
+      }
+      75%{
+      	background-color: green;
+        top: 0px;
+        left: 500px;
+      }
+      
+    100%{
+      	background-color: mistyrose;
+        top: 0px;
+        left: 0px;
+      }
+
+    }
+
+    @keyframes body_animation{
+ 		0%{
+ 			background-color: aqua;
+
+ 		}
+ 		25%{
+ 			background-color: #03fcf4;
+ 		}
+ 		50%{
+ 			background-color: #a503fc;
+ 		}
+ 		75%{
+ 			background-color: #fc0398;
+ 		}
+ 		100%{
+ 			background-color: #fc035e;
+ 		}
+ 	}
+ 	body{
+ 		animation-name: body_animation;
+ 		animation-duration: 5s;
+ 		background-color: #fc035e;
+ 		animation-iteration-count: infinite;
+ 	}
+    
+    div {
+      animation-name: an_1;
+      animation-duration: 2s;
+      animation-iteration-count:0;
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: gold;
+    }
+
+    
+
+
+  </style>
+</head>
+
+<body>
+  <div></div>
+  <p id="result"> result will displayed soon</p>
+
+
+  <script type="text/javascript">
+    document.write("hello there");
+    console.log("secret Message");
+    document.getElementById("result").innerHTML="98%"
+   </script>
+ 
+</body>
+</html>
